@@ -1,24 +1,25 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import Hero from "./Components/Hero";
+import Gallery from "./Components/Gallery";
 
 function App() {
+  const [city, setCity] = useState("London");
+
+  const handleChange = event => {
+    setCity(event.target.value);
+    setItems(Array.from({ length: 0 }));
+  };
+
+  const loadMore = () => {
+    setItems(items.concat(Array.from({ length: 2 })));
+  };
+
+  const [items, setItems] = useState(Array.from({ length: 1 }));
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="items-center w-full">
+      <Hero handleChange={handleChange} city={city} />
+      <Gallery city={city} loadMore={loadMore} items={items} />
     </div>
   );
 }
