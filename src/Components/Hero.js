@@ -66,7 +66,7 @@ const Hero = ({ handleChange, city }) => {
         </div>
         <MusicPlayer city={city} />
       </div>
-      <div>
+      <div className="hidden md:inline-block">
         <img
           className="hidden md:inline-block"
           src={World}
