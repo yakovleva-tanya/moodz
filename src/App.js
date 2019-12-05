@@ -5,7 +5,7 @@ import BackToTop from "react-back-to-top-button";
 import ArrowUp from "./Assets/ArrowUp.svg";
 
 function App() {
-  const [city, setCity] = useState("London");
+  const [city, setCity] = useState("Rome");
   const [items, setItems] = useState([]);
   const itemsToLoad = 25;
 

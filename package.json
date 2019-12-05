@@ -12,7 +12,8 @@
     "react-lottie": "^1.2.3",
     "react-player": "^1.14.2",
     "react-reveal": "^1.2.2",
-    "react-scripts": "3.2.0"
+    "react-scripts": "3.2.0",
+    "react-share": "^3.0.1"
   },
   "scripts": {
     "start": "react-scripts start",

@@ -1,8 +1,8 @@
 const cities = [
   {
-    name: "London",
-    key: "London",
-    music: "https://soundcloud.com/rlbpmd/sets/beatles"
+    name: "Rome",
+    key: "Rome",
+    music: "https://soundcloud.com/ahdab1122/sets/andrea-bocelli"
   },
   {
     name: "Morocco",
@@ -20,11 +20,6 @@ const cities = [
     music: "https://soundcloud.com/desta-adnyana/gamelan-pesel-1"
   },
   {
-    name: "Rome",
-    key: "Rome",
-    music: "https://soundcloud.com/ahdab1122/sets/andrea-bocelli"
-  },
-  {
     name: "Japan",
     key: "Japan",
     music: "https://soundcloud.com/adronius/sets/japanese-traditional"
@@ -32,13 +27,29 @@ const cities = [
   {
     name: "New York",
     key: "NYC",
-    music: "https://soundcloud.com/jake-d-gatenby/sets/new-york"
+    music: "https://soundcloud.com/franklyn-willingham/sets/jay-z-new-york"
   },
   {
     name: "India",
     key: "India",
     music:
       "https://soundcloud.com/indiatribemusiccollection/sets/traditional-indian-music-for"
+  },
+  {
+    name: "London",
+    key: "London",
+    music: "https://soundcloud.com/rlbpmd/sets/beatles"
+  },
+  {
+    name: "Egypt",
+    key: "Egypt",
+    music: "https://soundcloud.com/norhan-nabil-ellicy/sets/egypt"
+  },
+  {
+    name: "Mexico",
+    key: "Mexico",
+    music:
+      "https://soundcloud.com/user-92805118/sets/fiesta-del-norte-audio-clips"
   }
 ];
 

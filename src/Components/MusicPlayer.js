@@ -8,7 +8,7 @@ const MusicPlayer = city => {
   console.log(url);
   const [play, setPlay] = useState(false);
   return (
-    <div className="py-6 items-center w-full ">
+    <div className="py-4 items-center w-full ">
       <ReactPlayer
         className="hidden"
         controls={false}
@@ -25,11 +25,12 @@ const MusicPlayer = city => {
         type="checkbox"
       />
       <span
-        class="text-left text-xl inline-block  align-middle  text-gray-500"
+        class="text-left text-l inline-block  align-middle  text-gray-600"
         onClick={() => setPlay(!play)}
       >
-        Allow themed music for enhanced experience
+        Allow background music for enhanced experience
       </span>
+      {"  "}
     </div>
   );
 };
