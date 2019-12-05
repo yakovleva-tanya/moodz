@@ -5,9 +5,9 @@ import MusicPlayer from "./MusicPlayer";
 import ShareButtons from "./ShareButtons";
 const Hero = ({ handleChange, city }) => {
   return (
-    <div className="bg-purple-100  m-0 p-16 flex-row flex justify-around">
-      <div className="flex flex-col content-around justify-center pr-10">
-        <h1 className="text-left text-5xl font-medium inline-block  align-middle  text-gray-800">
+    <div className="bg-purple-100  sm:p-10 md:p-16 p-4 flex-row flex justify-around">
+      <div className="flex flex-col content-around justify-center md:pr-10">
+        <h1 className="text-left sm:text-5xl text-3xl font-medium inline-block align-middle  text-gray-800">
           MOODZ
           <a
             href="https://yakovleva.dev"
