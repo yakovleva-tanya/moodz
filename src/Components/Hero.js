@@ -8,7 +8,11 @@ const Hero = ({ handleChange, city }) => {
       <div className="flex flex-col content-around justify-center">
         <h1 className="text-left text-5xl font-medium inline-block  align-middle  text-gray-800">
           MOODZ
-          <a href="https://yakovleva.dev" target="_blank">
+          <a
+            href="https://yakovleva.dev"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <span className="text-left text-sm text-purple-600">
               {"    "}
               <span className="text-gray-600">by</span>
