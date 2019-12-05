@@ -3,6 +3,7 @@ import Hero from "./Components/Hero";
 import Gallery from "./Components/Gallery";
 import BackToTop from "react-back-to-top-button";
 import ArrowUp from "./Assets/ArrowUp.svg";
+
 function App() {
   const [city, setCity] = useState("London");
   const [items, setItems] = useState([]);

@@ -1,7 +1,7 @@
 import React from "react";
 import World from "../Assets/world2.svg";
 import cities from "../CitiesList";
-
+import MusicPlayer from "./MusicPlayer";
 const Hero = ({ handleChange, city }) => {
   return (
     <div className="bg-purple-100  m-0 p-16 flex-row flex justify-around">
@@ -52,8 +52,8 @@ const Hero = ({ handleChange, city }) => {
             </svg>
           </div>
         </div>
+        <MusicPlayer city={city} />
       </div>
-
       <img
         className="hidden md:inline-block"
         src={World}
