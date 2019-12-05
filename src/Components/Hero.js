@@ -2,22 +2,11 @@ import React from "react";
 import World from "../Assets/world2.svg";
 import cities from "../CitiesList";
 import MusicPlayer from "./MusicPlayer";
-import {
-  FacebookShareButton,
-  TwitterShareButton,
-  RedditShareButton,
-  TelegramShareButton,
-  FacebookIcon,
-  TwitterIcon,
-  RedditIcon,
-  TelegramIcon,
-  FacebookShareCount
-} from "react-share";
-
+import ShareButtons from "./ShareButtons";
 const Hero = ({ handleChange, city }) => {
   return (
     <div className="bg-purple-100  m-0 p-16 flex-row flex justify-around">
-      <div className="flex flex-col content-around justify-center">
+      <div className="flex flex-col content-around justify-center pr-10">
         <h1 className="text-left text-5xl font-medium inline-block  align-middle  text-gray-800">
           MOODZ
           <a
@@ -37,8 +26,11 @@ const Hero = ({ handleChange, city }) => {
           popular tourist destinations and get lost in the the infinite scroll
         </h3>
         <br />
-        <p className="py-2 mt-2 text-left text-xl inline-block  align-middle  text-gray-700">
-          Choose Your Destination
+        <p
+          className="py-2 mt-6
+         text-left text-l inline-block  align-middle  text-gray-600"
+        >
+          Choose Your Destination:
         </p>
         <div className="inline-block align-middle relative w-64">
           <select
@@ -66,42 +58,15 @@ const Hero = ({ handleChange, city }) => {
         </div>
         <MusicPlayer city={city} />
       </div>
-      <div className="hidden md:inline-block">
+      <div className="hidden md:flex flex-col justify-between content-between">
         <img
-          className="hidden md:inline-block"
+          className="hidden md:inline-block flex"
           src={World}
           alt="world"
           height="400"
           width="400"
         />
-        <div className="flex p-4 flex-row-reverse ">
-          <TelegramShareButton
-            className="p-1"
-            url={"https://moodz.yakovleva.dev/"}
-          >
-            <TelegramIcon size={30} round={true} />
-          </TelegramShareButton>
-          <FacebookShareButton
-            className="p-1"
-            url={"https://moodz.yakovleva.dev/"}
-          >
-            <FacebookIcon size={30} round={true} />
-          </FacebookShareButton>
-
-          <TwitterShareButton
-            className="p-1"
-            url={"https://moodz.yakovleva.dev/"}
-          >
-            <TwitterIcon size={30} round={true} />
-          </TwitterShareButton>
-          <RedditShareButton
-            className="p-1"
-            url={"https://moodz.yakovleva.dev/"}
-          >
-            <RedditIcon size={30} round={true} />
-          </RedditShareButton>
-          <p className="text-gray-500 pr-5 text-xl self-end">Share: </p>
-        </div>
+        <ShareButtons />
       </div>
     </div>
   );

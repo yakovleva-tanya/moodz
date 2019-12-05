@@ -25,7 +25,7 @@ const MusicPlayer = city => {
         type="checkbox"
       />
       <span
-        class="text-left text-l inline-block  align-middle  text-gray-600"
+        class="text-left text-l inline-block  align-middle  text-gray-500"
         onClick={() => setPlay(!play)}
       >
         Allow background music for enhanced experience
