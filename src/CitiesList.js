@@ -46,6 +46,12 @@ const cities = [
     music: "https://soundcloud.com/norhan-nabil-ellicy/sets/egypt"
   },
   {
+    name: "Berlin",
+    key: "Berlin",
+    music:
+      "https://soundcloud.com/djdabura/opening-set-from-spybar-for-monolink-10-10-19"
+  },
+  {
     name: "Mexico",
     key: "Mexico",
     music:
