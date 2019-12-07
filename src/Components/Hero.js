@@ -26,10 +26,7 @@ const Hero = ({ handleChange, city }) => {
           popular tourist destinations and get lost in the the infinite scroll
         </h3>
         <br />
-        <p
-          className="py-2 mt-6
-         text-left text-l inline-block  align-middle  text-gray-600"
-        >
+        <p className="py-2 mt-6 text-left text-l inline-block  align-middle  text-gray-600">
           Choose Your Destination:
         </p>
         <div className="inline-block align-middle relative w-64">

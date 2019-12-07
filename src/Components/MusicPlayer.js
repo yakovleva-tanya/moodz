@@ -5,7 +5,6 @@ import cities from "../CitiesList";
 const MusicPlayer = city => {
   const url = cities.find(({ key }) => key === city.city).music;
 
-  console.log(url);
   const [play, setPlay] = useState(false);
   return (
     <div className="py-4 items-center w-full ">
@@ -18,7 +17,6 @@ const MusicPlayer = city => {
       <input
         checked={play}
         onChange={() => {
-          console.log(play);
           setPlay(!play);
         }}
         class="mr-2 leading-tight"
