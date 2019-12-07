@@ -48,14 +48,6 @@ function App() {
   return (
     <div className="items-center w-full">
       <Hero handleChange={handleChange} city={city} />
-      <div className="bg-purple-200  sm:p-10 md:p-16 p-4 flex-row flex justify-around">
-        <p className="text-center text-l inline-block  align-middle  text-gray-600">
-          Current Weather:
-        </p>
-        <p className="text-center text-l inline-block  align-middle  text-gray-600">
-          18 °C
-        </p>
-      </div>
       <Gallery city={city} loadMore={loadMore} items={items} />
       <BackToTop showOnScrollUp showAt={1} speed={500} easing="easeInOutQuint">
         <img alt="arrow up" src={ArrowUp}></img>
