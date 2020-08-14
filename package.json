@@ -14,7 +14,7 @@
     "react-reveal": "^1.2.2",
     "react-scripts": "3.2.0",
     "react-share": "^3.0.1",
-    "serialize-javascript": "^2.1.1"
+    "serialize-javascript": "^3.1.0"
   },
   "scripts": {
     "start": "react-scripts start",
